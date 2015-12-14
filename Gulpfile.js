@@ -8,7 +8,7 @@ var babel = require('babelify');
 var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
-var serve = require('gulp-serve');
+var exec = require('child_process').exec;
 
 function compileAndBundleCss() {
   gulp.src('./src/stylesheets/**/*.scss')
@@ -52,6 +52,11 @@ gulp.task('watch', function() {
   gulp.watch('./src/stylesheets/**/*.scss', ['compileAndBundleCss']);
 });
 
-gulp.task('serve', serve('build'));
+gulp.task('server', function () {
+  var server = exec('json-server db.json --static ./build --routes routes.json');
+  server.stdout.on('data', function(data) {
+    console.log(data);
+  });
+});
 
 gulp.task('default', ['watch']);

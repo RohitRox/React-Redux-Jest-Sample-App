@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The post is Hhre",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui maxime assumenda adipisci, laboriosam labore, quam odit! Harum quia beatae quasi id accusantium, blanditiis non voluptate explicabo, possimus, veritatis nulla.",
+      "createdAt": "Sun Dec 13 2015 22:15:17 GMT-0500 (EST)"
+    },
+    {
+      "id": 2,
+      "title": "The second post is here",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, pariatur in odit esse dicta architecto praesentium sed voluptatibus earum perspiciatis sunt, consequatur ab impedit laborum nam, explicabo tempore ad ipsum?",
+      "createdAt": "Sun Dec 13 2015 22:15:17 GMT-0500 (EST)"
+    },
+    {
+      "id": 3,
+      "title": "The third post is here",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odit eligendi beatae harum, enim nobis, ipsum, debitis veritatis a optio illum, cum iure. Fugiat odio cumque unde exercitationem optio asperiores.",
+      "createdAt": "Sun Dec 13 2015 22:15:17 GMT-0500 (EST)"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "In voluptatem numquam molestiae itaque odio at cupiditate voluptates dolore, nobis veniam praesentium distinctio quibusdam magni a corrupti assumenda. Voluptatibus, ullam dolorem?",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, cum, optio et alias consectetur possimus exercitationem repudiandae labore sunt fugit similique ex recusandae adipisci provident dolores, ipsa illo veritatis voluptate!",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "body": "Lorem ure quibusdam nemo id repellat? Molestias excepturi asperiores nesciunt, mollitia laborum architecto vero aliquam, veniam suscipit rerum sunt sapiente odio, veritatis!",
+      "postId": 3
+    }
+  ]
+}
