@@ -1,4 +1,4 @@
-import { fetch } from 'isomorphic-fetch';
+import fetch from 'isomorphic-fetch';
 
 function apiRequest({url, method, data}, successCallback, errorCallback) {
   fetch(url, {
@@ -9,11 +9,11 @@ function apiRequest({url, method, data}, successCallback, errorCallback) {
       'Content-Type': 'application/json',
     },
   })
-    .then(response => {
-      return response.json();
-    })
-    .then(successCallback)
-    .catch(errorCallback);
+  .then(response => {
+    return response.json();
+  })
+  .then(successCallback)
+  .catch(errorCallback);
 }
 
 export default () => dispatch => action => {
